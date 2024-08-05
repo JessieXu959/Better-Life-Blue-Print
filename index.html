@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Better Life Blue Print -Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="scripts/style.js"></script>
+  </head>
+
+  <body>
+    <nav class="screenreader">
+      <a href="#content">Skip to Main content</a>
+    </nav>
+    <div id="header">
+      <header>
+        <h1>Better Life Blue Print</h1>
+
+        <nav id="forvisualimpairment">
+          <a
+            id="largetext"
+            href="#"
+            onclick="setActiveStyleSheet('large'); return false;"
+            ><span class="icon"></span>Large text</a
+          >
+          <a
+            id="normaltext"
+            href="#"
+            onclick="setActiveStyleSheet('normal'); return false;"
+            ><span class="icon"></span>Normal text</a
+          >
+        </nav>
+
+        <nav id="nav-container">
+          <ul>
+            <li><a href="index.html" class="nav-link">HOME</a></li>
+            <li><a href="Events.html" class="nav-link"> EVENTS</a></li>
+            <li><a href="Training.html" class="nav-link">TRAINING</a></li>
+            <li><a href="Community.html" class="nav-link">COMMUNITY</a></li>
+            <li><a href="Feedback.html" class="nav-link">FEEDBACK</a></li>
+          </ul>
+        </nav>
+        <img
+          src="Media/HomeCover.jpg"
+          height="400"
+          width="1200"
+          class="centered-image"
+          alt="Home Page Cover"
+        >
+
+        <hr>
+      </header>
+
+      <section>
+        <div class="container" id="Home"></div>
+
+        <h2><i>Do you long for a better life?</i></h2>
+        <p>
+          Whether you aspire to <b>reshape</b> your career, <b>enhance</b> your
+          well-being, <b>foster</b> meaningful relationships, or
+          <b>achieve</b> similar goals, <br><b>change is possible!</b>
+        </p>
+        <h2 class="space"><i>Our Mission</i></h2>
+        <p>
+          <b>Here</b>, we provide a blueprint for creating a more fulfilling
+          life through a systematic approach known as <b> M.A.V.E.R.S</b>:
+          <br ><b>Meditation</b>, <b>Affirmations</b>, <b>Visualization</b>,
+          <b>Exercise</b>, <b>Reading</b>, and <b>Scribing</b>. With
+          determination and concentration, <br>You can also work towards a
+          better life, and this website can serve as your guide.
+        </p>
+        <h2><i>What we have now?</i></h2>
+        <table class="table-width">
+          <caption>
+            <strong>datasheet</strong>
+            <details>
+              <summary>Help</summary>
+              <p>
+                In this table you will find the following rows: 5 Star Ratings,
+                Online Community, Followers
+              </p>
+            </details>
+          </caption>
+
+          <tr>
+            <th>5 Star Ratings</th>
+            <td>50K+</td>
+          </tr>
+
+          <tr>
+            <th>Online Community</th>
+            <td>330K+</td>
+          </tr>
+
+          <tr>
+            <th>Followers</th>
+            <td>500K</td>
+          </tr>
+        </table>
+      </section>
+
+      <hr>
+
+      <main id="content">
+        <article class="video-container">
+          <h2>Learn How Millions Of People Create The Life Of Their Dreams</h2>
+          <video
+            controls
+            poster="Media/BetterLifeBluePrint%20-%20Official%20Trailer%20Cover.png"
+            width="500"
+            src="Media/BetterLifeBluePrint%20-%20Official%20Trailer%20(1).mp4"
+          ></video>
+        </article>
+
+        <hr>
+
+        <article>
+          <h2>Come and join the interesting events!</h2>
+
+          <div class="row-container">
+            <div class="block-container">
+              <div class="image-container">
+                <figure>
+                  <img
+                    src="Media/Events-HomePage.jpg"
+                    alt="Photo about the Events"
+                    width="400"
+                  >
+                  <figcaption>Photo from the <cite>Events</cite></figcaption>
+                </figure>
+              </div>
+
+              <div class="layout">
+                <p>
+                  <b
+                    ><q
+                      >New Winter yoga opening training will opening soon !</q
+                    ></b
+                  ><br>
+                  We welcome everyone who wants to practice yoga in beautiful
+                  surroundings on Wednesdays starting at 17:00 in one of our
+                  most exclusive yoga locations! <br><b
+                    >Click the button below send us an email to join us!</b
+                  >
+                </p>
+
+                <button onclick="openEmailClient()">Send</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <hr>
+
+        <article>
+          <h2>Change your life with M.A.V.E.R.S.</h2>
+
+          <div class="homepage-row">
+            <section class="col1-section">
+              <div class="col1">
+                <div class="card">
+                  <img
+                    src="Media/Meditation2.png"
+                    width="70"
+                    height="60"
+                    alt="A person sitting and meditating"
+                  >
+                  <div class="card-text">
+                    <h3>Meditation</h3>
+                    <p>
+                      Decreases stress <br >
+                      increasing focus.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="Media/Exercise2.png"
+                    width="70"
+                    height="60"
+                    alt="a person is running"
+                  >
+                  <div class="card-text">
+                    <h3>Exercise</h3>
+                    <p>
+                      Increase energy <br >
+                      physical well-being.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col1-section">
+              <div class="col1">
+                <div class="card">
+                  <img
+                    src="Media/Affirmations2.png"
+                    width="70"
+                    height="60"
+                    alt="A target that hits the center"
+                  >
+                  <div class="card-text">
+                    <h3>Affirmations</h3>
+                    <p>
+                      Improve self-esteem <br >
+                      self-confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="Media/reading2.png"
+                    width="90"
+                    height="90"
+                    alt="a book"
+                  >
+                  <div class="card-text">
+                    <h3>Reading</h3>
+                    <p>Thinking <br >learning</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="col1-section">
+              <div class="col1">
+                <div class="card">
+                  <img
+                    src="Media/visualization2.png"
+                    width="70"
+                    height="60"
+                    alt="an big eye"
+                  >
+                  <div class="card-text">
+                    <h3>Visualization</h3>
+                    <p>Rehearse in your mind performing at your best.</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="Media/Scribing.png"
+                    width="85"
+                    height="95"
+                    alt="a hand holding a pen  "
+                  >
+                  <div class="card-text">
+                    <h3>Scribing</h3>
+                    <p>
+                      Self-Reflection <br >
+                      cultivate gratitude.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <hr >
+
+        <article>
+          <h2>What good things happened to you today?</h2>
+          <section>
+            <h3>Write here and share with us!</h3>
+
+            <div class="profile-container">
+              <div class="col2">
+                <h4>David Wilson</h4>
+                <img
+                  src="Media/Profile1.1.jpg"
+                  height="60"
+                  width="60"
+                  class="profile-radius"
+                  alt="Profile of David Wilson"
+                >
+                <p>
+                  <q
+                    >Hi, I am one of the users, this website has been magical in
+                    my life. Going through MAVERS every morning is like pumping
+                    rocket fuel into my body, mind, and spirit As rich dad often
+                    said, I can always make another dollar, but I cannot make
+                    another day!</q
+                  >
+                </p>
+              </div>
+
+              <div class="col2">
+                <h4>Sarah Martinez</h4>
+                <img
+                  src="Media/profile22.png"
+                  height="60"
+                  width="60"
+                  class="profile-radius"
+                  alt="Profile of Sarah Martinez"
+                >
+                <p>
+                  <q
+                    >I've learned that routines are the determining factor when
+                    it comes to our ability to sustain success and fulfillment.
+                    The Miracle Morning has been the one routine I've practiced
+                    that has enabled me to show up at my best every day.</q
+                  >
+                </p>
+              </div>
+
+              <div class="col2">
+                <h4>William Clark</h4>
+                <img
+                  src="Media/Profile3.3.jpg"
+                  height="60"
+                  width="60"
+                  class="profile-radius"
+                  alt="Profile of William Clark"
+                >
+                <p>
+                  <q
+                    >This website isn't just a website, it's the formula that I
+                    have used to achieve goals beyond what I ever believed was
+                    possible.</q
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+        <hr >
+
+        <div class="content-container">
+          <h2>Sources</h2>
+          <ul>
+            <li>
+              <a href="https://www.acefitness.org/" target="_blank"
+                >acefitness.org</a
+              >
+            </li>
+            <li>
+              <a href="https://www.verywellfit.com/" target="_blank"
+                >verywellfit.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <hr >
+      </main>
+      <div>
+        <footer>
+          <address>
+            <p>
+              Author <a href="mailto:xujessie959@gmail.com">XuJinxi</a><br>
+              H-1061 Budapest, Jokai street 8
+            </p>
+            <a
+              href="https://www.instagram.com/jessie_jinxi/"
+              target="_blank"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100083258306534"
+              target="_blank"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </address>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
