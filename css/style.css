@@ -1,0 +1,909 @@
+/* using special google fonts*/
+@import "https://fonts.googleapis.com/css?family=Oswald";
+
+.screenreader a {
+  position: absolute;
+  left: -9999px;
+}
+.screenreader a:focus {
+  position: static;
+  background: #fff;
+}
+/*body style*/
+body {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  background-image: url("../Media/bg3.jpg");
+  color: #2d251c;
+}
+body.large-contrast {
+  font-size: 1.3em;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: "Oswlad";
+  text-shadow: 3px 3px 3px white;
+  color: black;
+  margin-top: 5px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Oswlad";
+  text-shadow: 3px 3px 3px white;
+  color: black;
+}
+.space {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.centered-image {
+  display: block;
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+#header,
+main,
+footer {
+  text-align: center;
+  padding: 20px; /* 添加顶部和底部内边距 */
+  border-radius: 30px;
+  background-color: rgb(251, 251, 217);
+  width: 80%; /* 设置宽度为父元素宽度的80% */
+  min-width: 400px;
+  max-width: 1000px;
+  margin-left: auto; /* 实现水平居中 */
+  margin-right: auto;
+}
+/* 默认样式 */
+footer {
+  background-color: aliceblue; /* 设置背景颜色 */
+  padding: 20px; /* 设置内边距 */
+  text-align: center; /* 设置文本居中 */
+}
+
+/* 在较小屏幕上的样式调整 */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10px; /* 调整内边距 */
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+}
+#forvisualimpairment {
+  text-align: justify;
+}
+
+#header nav {
+  background-color: aliceblue;
+  padding: 3px;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 10px;
+}
+
+#header nav a {
+  margin-right: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-variant: small-caps;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+#header nav a:visited {
+  color: #6b6b6b;
+}
+
+#header nav a:hover {
+  text-decoration: none;
+  color: #f97316;
+}
+
+#header nav ul li {
+  display: inline;
+  white-space: nowrap;
+}
+
+#header img.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+/*  
+#header nav{
+   background-color:  aliceblue;
+   padding: 3px 3px 3px 3px;
+   border-left: 1px solid rgb(129, 129, 129); 
+   border-right:  1px solid rgb(129, 129, 129);
+   border-top: 1px solid rgb(129, 129, 129);
+   border-bottom: 1px solid rgb(129, 129, 129);
+   border-radius: 10px;
+}
+header nav a{
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+#header nav ul li{
+    display:inline;
+    white-space:nowrap;
+}
+#header nav a{
+text-decoration:none;
+font-variant:small-caps;
+font-size:1.5em;
+margin-right:1em;
+}
+
+#header nav a:link{color:rgb(0, 0, 0);}
+#header nav a:visited{color: #6b6b6b;}
+#header nav a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}
+
+
+
+#nav-container p {
+    margin: 0;
+}
+#nav-container a {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 1em;  
+}
+
+#nav-container a:hover{
+    color:#245fff
+}
+*/
+
+hr {
+  width: 100%;
+}
+table {
+  width: 400px;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 2px solid black;
+  background-color: aliceblue;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-width {
+  width: 400px;
+  padding: 10px;
+  border-spacing: 5px;
+}
+
+/* vedio */
+.video-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 500px;
+  height: auto;
+}
+
+/*img*/
+.content-container {
+  text-align: left;
+}
+.left-align {
+  float: left;
+  margin-right: 10px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: auto;
+}
+a[href^="mailto:"] {
+  text-decoration: underline;
+  color: #016cdd;
+}
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.image-container {
+  position: relative;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  float: left;
+  max-width: 100%;
+  overflow: hidden;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.layout {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  float: right;
+  font-style: italic;
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid #665544;
+  overflow: auto;
+  border-radius: 5px;
+  border-style: double;
+  border: 1px solid #484545;
+  box-shadow: 10px 10px 5px lightgrey;
+}
+p {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  text-align: justify;
+}
+q {
+  text-align: justify;
+  display: block;
+}
+
+figcaption {
+  width: 240px;
+}
+
+/*profile*/
+
+.profile-radius {
+  padding: 0px;
+  border-radius: 100px;
+}
+
+.col1-section {
+  float: left;
+  width: 33.33%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.card-text {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .col1-section {
+    width: 100%;
+    float: none;
+  }
+}
+.profile-container {
+  display: flex;
+}
+
+.col2 {
+  width: 33.33%;
+  padding: 20px;
+  background-color: aliceblue; /* Gray background color */
+  border: 1px solid #dcdcdc; /* Border color */
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20%;
+  height: 450px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: scroll;
+}
+
+.col2 img {
+  display: block;
+  margin: 0 auto; /* Center the image */
+  border-radius: 50%;
+}
+
+.profile-radius {
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .col2 {
+    font-size: 14px;
+  }
+}
+
+/*FEEDBACK*/
+
+.intro {
+  text-align: center;
+  background-color: bisque;
+}
+p {
+  text-align: center;
+}
+fieldset {
+  width: 300px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+  margin-left: 20px;
+  text-align: left;
+  background-color: rgb(233, 255, 255);
+  max-width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #5d4d3d;
+}
+legend {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.form2-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+  margin-right: 2%;
+  margin-top: 20px;
+  max-width: 100%;
+}
+.suggestions {
+  width: 30%;
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+
+.personal-info label {
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.personal-info input {
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.Feedback-row {
+  margin: 0 -20px;
+}
+.Feedback-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+/* styles.css */
+.reset-button {
+  border-color: #484848;
+  border-radius: 8px;
+  width: 100px;
+  margin-right: 20px;
+  height: 35px;
+  margin-top: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.reset-button:hover {
+  border-color: rgb(255, 252, 252);
+  cursor: pointer;
+}
+.submit-button {
+  border-color: #484848;
+  border-radius: 8px;
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+  transition: border-color 0.3s ease;
+}
+.submit-button:hover {
+  border-color: rgb(255, 252, 252);
+  cursor: pointer;
+}
+.border rounded bg-light my-3 p-3 {
+  margin: auto;
+}
+
+/*Coummunity*/
+
+#community-form input[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 300px;
+  height: 30px;
+}
+
+#community-form input[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+}
+.Community-text {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #5d4d3d;
+}
+
+.community-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.coummunity-article {
+  text-align: left;
+  width: 23%;
+  background-color: rgb(223, 219, 219);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
+.img {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.coummunity-article h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.coummunity-article p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.coummunity-articleaside {
+  font-size: 14px;
+}
+
+/*EVENTS*/
+.Events-article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Events-article li {
+  margin-bottom: 10px; /* 添加适当的间距，可根据需要调整 */
+}
+
+.Events-body {
+  font-family: Arial, sans-serif;
+  
+}
+.Events-article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+
+}
+.Events-article section {
+  box-sizing: border-box;
+  width: 30%; /* 设置每个小box的宽度 */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ddd; /* 设置灰色背景颜色 */
+  border-radius: 8px;
+  
+}
+
+.Events-article h3 {
+  margin-top: 0;
+}
+.Events-article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.Events-article h3:hover {
+  color: #007bff; /* 设置蓝色 */
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(239, 227, 227, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid #fff; /* Add a border for better visibility */
+  border-radius: 8px;
+}
+
+.close-button {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.events1-p {
+  text-align: justify;
+
+}
+
+/* Training*/
+
+#top {
+  text-align: justify;
+  margin-left: 0%;
+  margin-top: auto;
+  /* 可以根据需要调整标题与页面边缘的距离 */
+}
+#Events-sub {
+  text-align: justify;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#Meditation-subtitle {
+  text-align: justify;
+}
+
+.container-Affirmations {
+  width: 80%; /* 设置容器宽度，根据需要调整 */
+  margin: 0 auto; /* 居中显示，根据需要调整 */
+}
+
+.custom-box-Affirmations {
+  border: 2px solid #515353; /* 边框样式和颜色 */
+  background-color: rgb(244, 244, 244); /* 背景颜色 */
+  padding: 20px; /* 内边距，根据需要调整 */
+  margin: 20px 0; /* 外边距，根据需要调整 */
+}
+
+/* 添加额外样式，例如标题样式 */
+.custom-box-Affirmations h2 {
+  color: #555; /* 标题颜色 */
+}
+
+#Affirmations-input[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Affirmations-input1[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Affirmations-input2[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Affirmations-input {
+  width: 100%;
+  overflow: auto; /* 或者根据需要调整为 scroll、hidden 等 */
+  box-sizing: border-box;
+}
+#Affirmations-input1 {
+  width: 100%;
+  overflow: auto; /* 或者根据需要调整为 scroll、hidden 等 */
+  box-sizing: border-box;
+}
+#Affirmations-input2 {
+  width: 100%;
+  overflow: auto; /* 或者根据需要调整为 scroll、hidden 等 */
+  box-sizing: border-box;
+}
+
+#Affirmations-input[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+#Affirmations-input1[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+#Affirmations-input2[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+a {
+  font-size: 20px; /* 设置字体大小，根据需要调整 */
+  color: #0077cc; /* 设置字体颜色，根据需要调整 */
+}
+
+.container-Affirmations textarea:hover {
+  border: 2px solid #8dc6fe; /* Set the border color for the hover effect */
+  background-color: #f1efef; /* Set the background color for the hover effect */
+}
+.JumpLink-colum1 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 80px;
+}
+.JumpLink-colum12 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px; /* 设置下方间距，根据需要调整 */
+  margin-top: 10px;
+  margin-left: 130px;
+  padding: 5px;
+}
+.JumpLink-colum13 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px; /* 设置下方间距，根据需要调整 */
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 80px;
+}
+.JumLink-colum2 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 130px;
+  padding: 5px;
+}
+.JumLink-colum3 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px; /* 设置下方间距，根据需要调整 */
+  margin-top: 10px;
+  margin-right: 130px;
+  padding: 5px;
+  margin-left: 80px;
+}
+
+.JumLink-colum4 {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px; /* 设置下方间距，根据需要调整 */
+  margin-top: 10px;
+
+  padding: 5px;
+}
+
+.Sound-Column {
+  float: left;
+  width: 35%;
+  margin-right: 25px;
+  margin-bottom: 10px; /* 设置下方间距，根据需要调整 */
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.Sound-Column {
+  flex: 1;
+  text-align: center;
+  margin-right: 35px;
+}
+
+.mx-auto d-block {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Sound-Row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 35px;
+}
+
+.Affirmations-h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 65px;
+  text-align: justify;
+}
+
+.Visualization-p {
+  text-align: justify;
+  margin: 5px;
+  line-height: 2;
+  font-family: "Arial", sans-serif; /* 设置字体，你可以根据需要更改字体 */
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.Exercise-p {
+  padding: 15px; /* 可选：增加内边距，使文本与边框之间有一些空间 */
+  border: 2px solid #ddd; /* 边框样式，你可以更改颜色和宽度 */
+  background-color: antiquewhite;
+  text-align: justify;
+}
+.exercise-img {
+  text-align: center;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.Book-colum1 {
+  float: left;
+  width: 50%;
+}
+
+.custom-box-Scribing h3 {
+  color: #555;
+}
+
+#Scribing-input[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 1px solid rgb(244, 244, 244);
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Scribing-input1[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 1px solid rgb(244, 244, 244);
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Scribing-input2[type="text"] {
+  background-color: rgb(249, 246, 246);
+  border: 1px solid rgb(244, 244, 244);
+  border-radius: 5px;
+  padding: 8px;
+  width: 400px;
+  height: 200px;
+  text-align: justify;
+  margin-top: 0%;
+  vertical-align: top;
+}
+#Scribing-input {
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+#Scribing-input1 {
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+#Scribing-input2 {
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.container-Scribing {
+  width: 80%;
+  margin: 0 auto;
+}
+.custom-box-Scribing {
+  border: 2px solid #515353;
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+  margin: 20px 0;
+}
+#Scribing-input[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+#Scribing-input1[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+#Scribing-input2[type="text"]:hover {
+  border-color: rgb(247, 173, 185);
+  cursor: pointer;
+}
+a {
+  font-size: 20px;
+  color: #0077cc;
+}
+
+.container-Scribing textarea:hover {
+  border: 2px solid #8dc6fe;
+  background-color: #f5f2f2;
+}
+.highlight-Journal {
+  color: rgb(83, 140, 247);
+}
